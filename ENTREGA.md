@@ -28,6 +28,33 @@ Hubo un fallo en mitad de la ejecución en la que se dio cuenta de que no tenía
 Si lo tuviese que volver a hacer usaría otro lenguaje que fuese yo más familiar para poder revisar y verificar el código más fácilmente. También creo que el prompt es mejorable.
 
 ## Parte B
+
+```bash
+root@81f677165ab8:/usr/src/app# openspec --version
+1.4.1
+root@81f677165ab8:/usr/src/app# tree
+.
+|-- Dockerfile
+|-- ai4devs-openspect-sandbox-202606-roo
+|   |-- ENTREGA.md
+|   |-- README.md
+|   `-- openspec
+|       |-- changes
+|       |   `-- archive
+|       |-- config.yaml
+|       `-- specs
+|-- docker-compose.yml
+|-- node_modules
+`-- openspec
+    |-- changes
+    |   `-- archive
+    |-- config.yaml
+    `-- specs
+
+11 directories, 6 files
+root@81f677165ab8:/usr/src/app#
+```
+
 - Me sorpredió que en el comando de exploración tengan el uso de diagramas ASCII como parte del promt. En mi experiencia los diagramas no son el fuerte de los LLM.
 - Parece que definir una sección de **Steps** es un estandar en este framework.
 - No se si es estandar, pero me gusta que se definan opciones estandarizadas en el frontmatter de los skill aparte de el nombre y descripción:
